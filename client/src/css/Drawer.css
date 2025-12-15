@@ -1,0 +1,76 @@
+.drawer-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 280px;
+  background: rgb(30, 30, 30);
+  color: white;
+  padding: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1001;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+.close-btn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1px;
+}
+
+.drawer .li {
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.drawer .li:hover {
+  background-color: rgba(40, 40, 40, 0.833);
+}
+
+.drawer .li:nth-child(1) {
+  margin: 7px 0;
+}
+
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.drawer-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
