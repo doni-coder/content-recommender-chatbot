@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# PyInstaller and Installer logs
+*.manifest
+*.spec
+pip-log.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django, .env, and virtual environments
+*.log
+local_settings.py
+.env
+.venv/
+venv/
+
+# IDE-specific files (customize as needed)
+.vscode/
+.idea/
